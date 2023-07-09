@@ -1,13 +1,13 @@
 module.exports = {
   apps: [
     {
-      name: 'strapi',
-      cwd: '/srv/strapi/backend',
-      script: 'npm',
-      args: 'develop',
+      name: "strapi",
+      cwd: "/srv/strapi/",
+      script: "npm",
+      args: "start",
       autorestart: true,
       env: {
-        NODE_ENV: 'development',
+        NODE_ENV: "production",
       },
     },
   ],
