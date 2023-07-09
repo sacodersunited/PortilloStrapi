@@ -1,0 +1,44 @@
+{
+  "kind": "singleType",
+  "collectionName": "biographies",
+  "info": {
+    "singularName": "biography",
+    "pluralName": "biographies",
+    "displayName": "Biography",
+    "name": "biography"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "facebook": {
+      "type": "string"
+    },
+    "twitter": {
+      "type": "string"
+    },
+    "instagram": {
+      "type": "string"
+    },
+    "bio_pdf": {
+      "type": "media",
+      "allowedTypes": [
+        "files"
+      ],
+      "multiple": false,
+      "required": false
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "bio_pic": {
+      "type": "media",
+      "allowedTypes": [
+        "images"
+      ],
+      "multiple": false,
+      "required": true
+    }
+  }
+}

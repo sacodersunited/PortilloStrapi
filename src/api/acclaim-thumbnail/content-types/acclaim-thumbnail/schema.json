@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "acclaim_thumbnails",
+  "info": {
+    "singularName": "acclaim-thumbnail",
+    "pluralName": "acclaim-thumbnails",
+    "displayName": "Acclaim-thumbnail",
+    "name": "acclaim-thumbnail"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "role": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "default": "role/reviewer"
+    },
+    "thumbnail": {
+      "type": "media",
+      "allowedTypes": [
+        "images"
+      ],
+      "multiple": false,
+      "required": true
+    },
+    "acclaims": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::acclaim.acclaim",
+      "mappedBy": "acclaim_thumbnail"
+    }
+  }
+}

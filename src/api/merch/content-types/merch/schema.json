@@ -1,0 +1,50 @@
+{
+  "kind": "collectionType",
+  "collectionName": "merches",
+  "info": {
+    "singularName": "merch",
+    "pluralName": "merches",
+    "displayName": "Merch",
+    "name": "merch"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": "merch title",
+      "required": true
+    },
+    "image": {
+      "type": "media",
+      "allowedTypes": [
+        "images"
+      ],
+      "multiple": false,
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": false
+    },
+    "itunes": {
+      "type": "string",
+      "default": "blank"
+    },
+    "website": {
+      "type": "string",
+      "default": "blank"
+    },
+    "spotify": {
+      "type": "string",
+      "default": "blank"
+    },
+    "amazon": {
+      "type": "string",
+      "default": "blank"
+    }
+  }
+}
